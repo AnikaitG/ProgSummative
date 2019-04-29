@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Week Planner</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+        </head>
+
+        <body>
+            <div class="container">
+                <div class="title">
+                    <h1 class="title">Week Planner</h1>
+                </div>
+            </div>
+
+            <div class="main">
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="week" id="week">
+                            <button id="Mon" class="day">Monday</button>
+                            <button id="Tue" class="day">Tuesday</button>
+                            <button id="Wed" class="day">Wednesday</button>
+                            <button id="Thu" class="day">Thursday</button>
+                            <button id="Fri" class="day">Friday</button>
+                            <button id="Sat" class="day">Saturday</button>
+                            <button id="Sun" class="day">Sunday</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule" id="schedule">
+                    <hr class="outer">
+                    <div class="hours">
+                        <div class="hour" id="h8">08:00</div><div class="event" id="e8"></div><hr>
+                        <div class="hour" id="h9">09:00</div><div class="event" id="e9"></div><hr>
+                        <div class="hour" id="h10">10:00</div><div class="event" id="e10"></div><hr>
+                        <div class="hour" id="h11">11:00</div><div class="event" id="e11"></div><hr>
+                        <div class="hour" id="h12">12:00</div><div class="event" id="e12"></div><hr>
+                        <div class="hour" id="h13">13:00</div><div class="event" id="e13"></div><hr>
+                        <div class="hour" id="h14">14:00</div><div class="event" id="e14"></div><hr>
+                        <div class="hour" id="h15">15:00</div><div class="event" id="e15"></div><hr>
+                        <div class="hour" id="h16">16:00</div><div class="event" id="e16"></div><hr>
+                        <div class="hour" id="h17">17:00</div><div class="event" id="e17"></div><hr>
+                        <div class="hour" id="h18">18:00</div><div class="event" id="e18"></div><hr>
+                        <div class="hour" id="h19">19:00</div><div class="event" id="e19"></div><hr>
+                        <div class="hour" id="h20">20:00</div><div class="event" id="e20"></div><hr>
+                        <div class="hour" id="h21">21:00</div><div class="event" id="e21"></div><hr>
+                        <div class="hour" id="h22">22:00</div><div class="event" id="e22"></div><hr>
+                        <div class="hour" id="h23">23:00</div><div class="event" id="e23"></div>
+                    </div>
+                    <hr class="outer">    
+
+                    <div class="modify">
+
+                        <div class="menu" id="menu">
+                            <button class="mod" id="ev_but">Add/Remove Events</button>
+                            <button class="mod" id="pl_but">View Venues</button>
+                        </div>
+
+                        <div class="ev" id="ev">
+                            <div class="add">
+                                <fieldset>
+                                    <legend>Add an Event</legend>
+                                    <form action='./add' method='post' id='add_ev'>
+                                        Event to add: <input name='ev_event' id='ev_event' size='25'><br>
+                                        Venue: <input name='place' id='place' size='20'><br>
+                                        Time of event: <input type='number' min='8' max='23' id='hr'><br>
+                                        <input type='submit' value='Add Event'><hr>
+                                    </form>
+                                </fieldset>
+                            </div>
+                            <div class="delete">
+                                <fieldset>
+                                    <legend>Remove an Event</legend>
+                                    <form action='./delete' method='post' id='del_ev'><br>
+                                        Remove event at time: <input type='number' min='8' max='23' id='hr2'>
+                                        <input type='submit' value='Delete'><hr>
+                                    </form>
+                                </fieldset>   
+                            </div>
+                            <button class="back" id="ev_back">Back</button>
+                        </div>
+
+                        <div class="pl" id="pl">
+                            <div id="places"></div>
+                            <button class="back" id="pl_back">Back</button>
+                        </div>
+                        
+                        <br>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <script src="index.js"></script>
+        </body>
+    </html>

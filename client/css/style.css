@@ -1,0 +1,105 @@
+h1 {
+	margin-top: 10px;
+	font-size: 35px;
+}
+
+p.lead {
+	margin-top: 10px;
+}
+
+h1.title {
+	font-family: Impact;
+	font-size: 70px;
+	color: brown;
+	margin-bottom: 30px;
+	white-space: nowrap;
+}
+
+hr.outer {
+	border-width: 3px;
+}
+
+body {
+	background-color: black;
+}
+
+div.title {
+	text-align: center;
+}
+
+div.main {
+	background-color: tan;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+
+button.day {
+	background-color: brown;
+	padding: 15px 30px;
+	border: 2px solid black;
+	color: white;
+	font-size: 25px;
+	border-radius: 8px;
+}
+
+button.day:hover {
+	border: 2px solid white;
+}
+
+div.week {
+	text-align: center;
+	padding: 15px 0;
+}
+
+div.schedule {
+	display: none;
+}
+
+div.hour {
+	background-color: brown;
+	border: none;
+	color: white;
+	display: inline-block;
+	font-size: 20px;
+	margin-left: 32px;
+	margin-right: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div.event {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+	font-size: 18px;
+}
+
+div.modify {
+	text-align: center;
+}
+
+button.mod {
+	background-color: brown;
+	border: 2px solid black;
+	color: white;
+	font-size: 15px;
+	padding: 10px 20px;
+}
+
+button.back {
+	background-color: brown;
+	border: 2px solid black;
+	color: white;
+	font-size: 15px;
+	padding: 10px 20px;
+}
+
+div.ev {
+	display: none;
+}
+
+div.pl {
+	display: none;
+	list-style: none;
+}
